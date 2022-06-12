@@ -1,0 +1,98 @@
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+  
+  .socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 1.6em;
+    max-width: 1.5em;
+    height: 1.9em;
+    white-space: nowrap;
+    line-height: 1.5em; 
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+  }
+  
+  .socialIcons li i {
+    margin-right: 0.5em;
+  }
+  
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+  }
+  
+  .socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+  }
+  
+  .socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+  }
+  
+  .socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+  }
+  
+
+.nuestros productos {
+  text-align: center;
+}
+
+.nuestros-productos {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.container-about-video-one {
+    width: 150px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0rem;
+}
+.container-about-two  {
+  background-color: #b46d3b13;
+  display: flex;
+}
+
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.contacto-section {
+  display: flex;
+  padding: 0;
+  margin: 4rem 0;
+  justify-content: center;
+}
+
+
+.contacto-completo {
+  background-color: #e2efe7; 
+}
