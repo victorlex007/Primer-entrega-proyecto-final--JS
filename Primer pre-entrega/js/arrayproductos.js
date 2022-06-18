@@ -1,7 +1,7 @@
 function creoID() {
     return parseInt(Math.random() * 10000)
 }
-
+// debugger
 function agregarProducto() {
     let nombre = prompt("Ingrese el nombre del producto:")
     let importe = prompt("Ingrese el importe:")
@@ -9,7 +9,7 @@ function agregarProducto() {
 }
 
 function buscarProducto() {
-    debugger
+    // debugger
     let prod = prompt("Ingrese el nombre del producto:")
         if (prod !== "") {
             let resultado = productos.find( p => p.id === prod.toUpperCase())
@@ -38,49 +38,36 @@ function existeProducto() {
 
 }
 
-// function proyectarIncremento(porc) {
-//     let proyeccion = productos.map( p => {
-//                                             return {
-//                                                 id: p.id,
-//                                                 nombre: p.nombre,
-//                                                 importe: p.importe,
-//                                                 proyeccion: (p.importe * porc)
-//                                             }
-//                                     })
-//         console.clear()
-//         console.log("PROYECCIÓN INCREMENTAL DE", porc, "%")
-//         console.table(proyeccion)
-// }
 
-function calcularCarrito() {
-    debugger
-    console.log("TOTAL DEL CARRITO")
-    let total = carrito.reduce( (acc, c) => acc + c.importe, 0)
-        console.table(total)
-}
+// function calcularCarrito() {
+//     debugger
+//     console.log("TOTAL DEL CARRITO")
+//     let total = carrito.reduce( (acc, c) => acc + c.importe, 0)
+// //         console.table(total)
+// }
 
 
 
 generadorAutomatico()
 
 //FUNCIONES QUE SE USAN PARA LLENAR AUTOMÁTICAMENTE LOS ARRAYS DE OBJETOS A USAR
+// debugger
 function generadorAutomatico() {
-    productos.push(new Producto("CHORIZO", 1500))
-    productos.push(new Producto("VACIO", 2500))
-    productos.push(new Producto("LOMO", 2500))
-    productos.push(new Producto("STEAK", 2000))
-    productos.push(new Producto("TOMAHAWK", 3000))
-    productos.push(new Producto("T-BONE", 1500))
+    productos.push(new Producto(id(creoID), nombre = 'STEAK', precio = 2500))
+    productos.push(new Producto(id(creoID), nombre = 'TOMAHAWK', precio = 3500))
+    productos.push(new Producto(id(creoID), nombre = 'T-BONE', precio = 2460))
+    console.table(productos)
 }
 
-function generarCarrito() {
-    carrito.push(new Producto("CHORIZO", 1500))
-    carrito.push(new Producto("LOMO", 2500))
-    carrito.push(new Producto("T-BONE", 1500))
-}
+// function generarCarrito() {
+//     carrito.push(new Producto('CHORIZO', 1500))
+//     carrito.push(new Producto('LOMO', 2500))
+//     carrito.push(new Producto('T-BONE', 1500))
+
+// }
 
 function recorrerArrayProductos() {
-    debugger
+    // debugger
     for (let elemento of productos) {
         console.table(elemento)
     }
