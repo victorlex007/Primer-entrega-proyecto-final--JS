@@ -1,4 +1,11 @@
-const productos = ["CHORIZOS", "VACIO", "LOMO","T-BONE", "STEAK"]
+const productos = [
+    {id: 1, nombre: "STEAK", precio: 2500},
+    {id: 2, nombre: "CHORIZOS", precio: 1600}, 
+    {id: 3, nombre: "VACIO", precio: 3100},
+    {id: 4, nombre: "LOMO", precio: 2600},
+    {id: 5, nombre: "TOMAHAWK", precio: 2400},
+    {id: 6, nombre: "T-BONE", precio: 2500}
+]
 //                   0          1        2           3        4      
 
 class Producto {
